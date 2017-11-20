@@ -3,7 +3,7 @@ spring:
   profiles:
     active: development
   application:
-    name: product
+    name: product-v1
 
 # If you wish to use Spring Cloud Config then set the path accordingly
 #spring.cloud.config.uri: http://localhost:8070
