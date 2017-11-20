@@ -24,10 +24,12 @@ http://localhost:8081/mappings
 
 ### product-detail
 http://localhost:8082/api/product/detail Product Service direct
+
 http://localhost:8081/product-v1/api/product/detail Product Service via Zuul
 
 ### cutomer-info
 http://localhost:8083/api/customer/info Customer Service direct 
+
 http://localhost:8081/customer-v1/api/customer/info Customer Service via Zuul
 
 ### Aggregation
