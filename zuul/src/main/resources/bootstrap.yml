@@ -26,7 +26,14 @@ server:
 # Add the paths for the Gateway
 # XXX is the name of your app, e.g. X-rest and YYY is the endpoint you'd access
 zuul:
-  ignoredPatterns: /**/admin/**
+  ignoredPatterns: 
+    ? "/**/admin/**"
+    ? "/mappings"
+  routes:
+    customer:
+      path: /customer-v1/**
+      serviceId: customer-v1
+      strip-prefix: true
 #  routes.product-be-rest:
 #    path: /product-be-rest/**
 #    url: http://phoenix-be-product.cfapps.io/
