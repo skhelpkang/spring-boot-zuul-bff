@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/bff/product")
+@RequestMapping("/bff/customer-product")
 public class ProductController {
 
   @Autowired
