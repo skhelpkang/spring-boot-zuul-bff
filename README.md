@@ -16,6 +16,8 @@ Spring Boot RESTful service for a simple sample
 
 
 # Test Url
+
+id/pass => user/password
 ## Eureka Server
 
 http://localhost:8071/ 
