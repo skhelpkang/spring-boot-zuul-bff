@@ -12,7 +12,13 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8071/eureka/
+#    availabilityZones:
+#      us-east-1: us-east-1a,us-east-1b
+    prefer-same-zone-eureka: true
   instance:
+#    metadata-map:
+    app-group-name: ms
+    zone: ms
     status-page-url: ${management.contextPath}/info
     health-check-url-path: ${management.contextPath}/health
 
