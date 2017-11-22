@@ -15,22 +15,25 @@ Spring Boot RESTful service for a simple sample
 - gives a simple Customer object as JSON
 
 
-## Test Url
-### Eureka Server
+# Test Url
+## Eureka Server
+
 http://localhost:8071/ 
 
-### Zuul Server mappings
+##Zuul Server mappings
+
 http://localhost:8081/mappings 
 
-### product-detail
-http://localhost:8082/api/product/detail Product Service direct
+## product-detail
 
-http://localhost:8081/product-v1/api/product/detail Product Service via Zuul
+http://localhost:8082/api/product/detail direct
+http://localhost:8081/product-v1/api/product/detail G/W
 
-### cutomer-info
-http://localhost:8083/api/customer/info Customer Service direct 
+## cutomer-info
 
-http://localhost:8081/customer-v1/api/customer/info Customer Service via Zuul
+http://localhost:8083/api/customer/info  direct 
+http://localhost:8081/customer-v1/api/customer/info G/W
 
-### Aggregation
-http://localhost:8081/bff/customer-product/detail Call Zuul for aggregated info
+## BFF
+http://localhost:8084/bff/customer-product/detail direct
+http://localhost:8081/bff-v1/bff/customer-product/detail G/W
