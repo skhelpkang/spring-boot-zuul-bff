@@ -2,8 +2,7 @@
 spring:
   application:
     name: gateway
-  session:
-    timeout: 3600
+
 
 # If you want to store these settings in the config server prefixed with [spring, e.g. spring.cloud.config]
 #  cloud:
@@ -24,6 +23,8 @@ eureka:
 
 server:
   port: 8081
+  session:
+    timeout: 3600
 
 # Add the paths for the Gateway
 # XXX is the name of your app, e.g. X-rest and YYY is the endpoint you'd access
