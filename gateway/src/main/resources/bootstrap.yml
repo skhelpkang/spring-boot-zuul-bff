@@ -25,6 +25,8 @@ server:
   port: 8081
   session:
     timeout: 3600
+    cookie:
+      name: gatewaykey
 
 # Add the paths for the Gateway
 # XXX is the name of your app, e.g. X-rest and YYY is the endpoint you'd access
