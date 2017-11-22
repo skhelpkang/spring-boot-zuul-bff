@@ -1,4 +1,4 @@
-package de.michlb.demo.bff.controller;
+package de.michlb.demo.bff.web;
 
 import java.util.Enumeration;
 import java.util.HashMap;
@@ -14,20 +14,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import de.michlb.demo.bff.feign.CustomerClient;
-import de.michlb.demo.bff.feign.ProductClient;
+import de.michlb.demo.bff.proxy.CustomerProxy;
+import de.michlb.demo.bff.proxy.ProductProxy;
 
 @RestController
 @RequestMapping("/bff/customer-product")
-public class ProductController {
+public class ProductProvider {
 
-	private static Logger log = LoggerFactory.getLogger(ProductController.class);
-
-	@Autowired
-	private ProductClient productClient;
+	private static Logger log = LoggerFactory.getLogger(ProductProvider.class);
 
 	@Autowired
-	private CustomerClient customerClient;
+	private ProductProxy productClient;
+
+	@Autowired
+	private CustomerProxy customerClient;
 
 	/**
 	 * This call needs to be split into at least two calls and the result needs to
