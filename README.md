@@ -14,18 +14,23 @@ Spring Boot RESTful service for a simple sample
 Spring Boot RESTful service for a simple sample
 - gives a simple Customer object as JSON
 
-## Check Results
 
-[http://localhost:8071/](http://localhost:8071/) Eureka Server
+## Test Url
+### Eureka Server
+http://localhost:8071/ 
 
-[http://localhost:8081/mappings](http://localhost:8081/mappings) Zuul Server mappings
+### Zuul Server mappings
+http://localhost:8081/mappings 
 
-[http://localhost:8082/api/product/detail](http://localhost:8082/api/product/detail) Product Service direct - detail
+### product-detail
+http://localhost:8082/api/product/detail Product Service direct
 
-[http://localhost:8081/product/api/product/detail](http://localhost:8081/product/api/product/detail) Product Service via Zuul - detail
+http://localhost:8081/product-v1/api/product/detail Product Service via Zuul
 
-[http://localhost:8083/api/customer/info](http://localhost:8083/api/customer/info) Customer Service direct - info
+### cutomer-info
+http://localhost:8083/api/customer/info Customer Service direct 
 
-[http://localhost:8081/customer/api/customer/info](http://localhost:8081/customer/api/customer/info) Customer Service via Zuul - info
+http://localhost:8081/customer-v1/api/customer/info Customer Service via Zuul
 
-[http://localhost:8081/bff/product/detail](http://localhost:8081/bff/product/detail) Call Zuul for aggregated info
+### Aggregation
+http://localhost:8081/bff/customer-product/detail Call Zuul for aggregated info
