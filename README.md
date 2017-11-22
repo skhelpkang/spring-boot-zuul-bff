@@ -20,7 +20,7 @@ Spring Boot RESTful service for a simple sample
 
 http://localhost:8071/ 
 
-##Zuul Server mappings
+## Zuul Server mappings
 
 http://localhost:8081/mappings 
 
